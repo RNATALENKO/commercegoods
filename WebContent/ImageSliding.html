@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="ImageSliding.js" defer></script>
+<meta charset="US-ASCII">
+<title>Insert title here</title>
+
+	<style>
+	
+		
+		.topoverlap{
+			height:175px; 
+			background-color:lightblue;
+			z-index:1;  	
+		}
+		
+		.bottomoverlap{
+			position:relative;
+			height:175px; 
+			background-color:lightblue;
+			top:800px; 
+		}
+		
+	
+		ul{
+			position:relative;
+			width:1200px; 
+			min-width: 600px; 
+			max-width:1300px;  
+			list-style:none;
+			display:flex; 
+			flex-wrap: wrap;
+			float:right;
+			top:280px; 
+		}
+		
+		
+		li{
+			padding: 40px; 
+		}
+	
+		li > img{
+			width:300px; 
+			height:250px; 
+		}
+		
+		
+		/*transform class  transform:translate(0,-600px); */
+		.imagelist{
+			z-index:-1;
+		}
+		
+		.moveup{
+			
+		}
+		
+		
+		
+		
+	
+	</style>
+
+
+</head>
+<body>
+
+		<div id="slidecontainer" class="slidecontainer" style="background-color:yellow; height:1250px;z-index:-2; position:relative;"> 
+				<div id="topoverlap" class="topoverlap"></div>
+				<ul id="imagelist" class="imagelist">
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+					<li><img src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe"></li>
+				</ul>
+			<div id="bottomoverlap" class="bottomoverlap" style="height:900px;"> </div>
+			
+		</div>
+		<div>Following:text</div>
+	
+	
+	<!-- simulate scrolling -->
+	<div id="container" style="height: 700px; width:100%; "> 
+	
+	</div>
+	<div id="container" style="height: 700px; width:100%; "> 
+	
+	</div>
+
+</body>
+</html>

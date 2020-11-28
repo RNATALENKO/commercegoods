@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="US-ASCII">
+<title>Insert title here</title>
+<script src="onhoverprice.js"></script>
+<style>
+
+
+	.image{
+		z-index:1;
+	}
+	
+	.background{
+		position:relative;
+		background-color:lightblue;
+		width:325px;
+		height:275px; 
+		margin:auto;
+		top:-200px;
+		z-index:-1;
+		display:none;
+	}
+
+	.price{
+		width:100px;
+		height:50px;
+		background-color:blue;
+		margin:auto;
+		color:white;
+		font-size:36px;
+		position:relative;
+		top:-230px;
+		display:none;
+	}
+	
+
+
+</style>
+
+
+
+</head>
+<body>
+
+	<div style="text-align:center;"> 
+		<img class="image" style="width:250px; height:200px;" id="imageone" class="img imageone"
+				src="https://drive.google.com/uc?export=view&amp;id=1mcMGsgagWNC_j08-lhtgJvGpXpohbsQe">	
+			<div id="background" class="background">
+			</div>
+			<div id="price" class="price">$100</div>			
+	</div>	
+		
+		<script>displayPrice();</script>
+
+
+</body>
+</html>
