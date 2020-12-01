@@ -3,7 +3,7 @@
 <head>
 <meta charset="US-ASCII">
 <title>Insert title here</title>
-<script src="flashscroll.js"></script>
+<script src="flashscroll.js" defer></script>
 
 
 <style> 
@@ -55,12 +55,13 @@
 		.productcontainer{
   			position:relative;
 		    width: 50%;
-		    float:right; 
-		    margin-right:40px;  
+		    float:right;  
+		    margin-right:15px; 
 		    height:600px;  
 			background-color:yellow; 
 			min-width: 430px;
-			top:250px;
+			top:300px;
+			overflow-x: hidden;
 			 
 		}
 		
@@ -70,27 +71,32 @@
 			height: 400px;
 		}
 		
-		#imagethree, #imagefour{
-
-		 	opacity:.5;
+		.thirdimage, .fourthimage{
+		 	opacity:.8;
 		}
 		
-		#imageone{
+		.firstimage{
 		 	display:block;
 		}
 		
-		#imagetwo{
+		.secondimage{
 			display:none;
 		}
 		
 		
-		#imagethree{
+		.thirdimage{
 			display:none;
 		}
 		
 		
-		#imagefour{
+		.fourthimage{
 			display:none;
+		}
+		
+		
+		.description{
+			position:relative;
+			left:1500px;
 		}
 		
 		
@@ -115,12 +121,12 @@
 		
 		<div id="productcontainer" class="productcontainer"> 
 		
-				<img id="imageone" class="allimages" src="https://drive.google.com/uc?export=view&amp;id=1teR-4T3ki-pzbNAGzs6KznqncuSf-5Le">
-				<img id="imagetwo" class="allimages" src="https://drive.google.com/uc?export=view&amp;id=1p--iszoU1UlT_pdKS7bJaba7tjNyPh0b">
-				<img id="imagethree" class="allimages" src="https://drive.google.com/uc?export=view&amp;id=1teR-4T3ki-pzbNAGzs6KznqncuSf-5Le">
-				<img id="imagefour" class="allimages" src="https://drive.google.com/uc?export=view&amp;id=1p--iszoU1UlT_pdKS7bJaba7tjNyPh0b">
+				<img id="firstimage" class="firstimage allimages" src="https://drive.google.com/uc?export=view&amp;id=1teR-4T3ki-pzbNAGzs6KznqncuSf-5Le">
+				<img id="secondimage" class="secondimage allimages" src="https://drive.google.com/uc?export=view&amp;id=1p--iszoU1UlT_pdKS7bJaba7tjNyPh0b">
+				<img id="thirdimage" class="thirdimage allimages" src="https://drive.google.com/uc?export=view&amp;id=1teR-4T3ki-pzbNAGzs6KznqncuSf-5Le">
+				<img id="fourthimage" class="fourthimage allimages" src="https://drive.google.com/uc?export=view&amp;id=1p--iszoU1UlT_pdKS7bJaba7tjNyPh0b">
 		
-				<div id="item description">
+				<div id="item description" class="description" style="background-color:lightblue;">
 						<p id="descriptionone">item description one</p>
 						<p id="descriptiontwo">item description two</p>
 						<p id="descriptionthree">item description three</p>

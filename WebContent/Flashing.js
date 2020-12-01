@@ -6,12 +6,17 @@ imageTwo = document.querySelector(".imagetwo");
 imageThree = document.querySelector(".imagethree");
 imageFour = document.querySelector(".imagefour");
 
+console.log(imageOne);
+console.log(imageOne.style.display);
+
 
 //get the images and get length of array, set counter
 var imgcoll = document.images; //get image collection
 var imgs = Array.prototype.slice.call(imgcoll, 0); //coll to array
 var len = imgs.length; 
 var counter = 0; 
+
+
 
 
 //increases counter, executes on and off display
@@ -39,6 +44,8 @@ imgs.forEach(function(img){
 
 //switch z-indexes of two images
 function switchImage(elementone, elementtwo){
+	
+	console.log(elementone.style.display);
 	
 	if(elementone.style.display =="block"){
 		elementone.style.display = "none"; 
